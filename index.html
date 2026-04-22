@@ -4,27 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive</title>
+    <title>Document</title>
+    
     <link rel="stylesheet" href="Style.css">
 </head>
 
 <body>
-    <p class="A"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe distinctio, tenetur incidunt quaerat corporis
-        nemo consequatur eligendi perspiciatis ipsa?</p>
-    <p class="B">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe distinctio, tenetur incidunt quaerat corporis
-        nemo consequatur eligendi perspiciatis ipsa?</p>
-    <p class="C">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe distinctio, tenetur incidunt quaerat corporis
-        nemo consequatur eligendi perspiciatis ipsa?</p>
-    <div class="M"></div>
+    <header class="header">
+        <div class="container header-inner">
 
-    <div class="content">
-        <div class="G"></div>
-        <div class="G"></div>
-        <div class="G"></div>
-        <div class="G"></div>
-        <div class="G"></div>
-        <div class="G"></div>
-    </div>
+            <!-- Logo + nom -->
+            <a href="#accueil" class="brand">
+                <div class="logo">AN</div>
+                <div class="brand-text">
+                    <strong>Awa Ndiaye</strong>
+                    <span>Portfolio étudiant / personnel</span>
+                </div>
+            </a>
+
+            <!-- Checkbox cachée (pour le menu burger sans JS) -->
+            <input type="checkbox" id="menuToggle" class="menu-checkbox" />
+
+            <!-- Le label est le bouton burger visuel -->
+            <label for="menuToggle" class="menu-toggle" aria-label="Ouvrir le menu">
+                <span></span>
+            </label>
+
+            <!-- Menu de navigation -->
+            <nav class="nav">
+                <a href="#accueil">Accueil</a>
+                <a href="#apropos">À propos</a>
+                <a href="#projets">Projets</a>
+                <a href="#profil">Profil</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <section class="hero" id="accueil">
+            <div class="container">
+                <div class="hero-box">
+
+                    <div class="hero-content">
+                        <div class="hero-badge">Portfolio moderne & évolutif</div>
+
+                        <h1>Construire mon parcours avec passion, créativité et ambition</h1>
+
+                        <p>
+                            Bonjour, je suis Awa Ndiaye, étudiante passionnée par le numérique,
+                            l'apprentissage et la création d'interfaces modernes.
+                        </p>
+
+                        <div class="hero-actions">
+                            <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+                            <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                        </div>
+
+                        <div class="hero-stats">
+                            <div class="hero-stat">
+                                <strong>5+</strong>
+                                <span>Projets réalisés</span>
+                            </div>
+                            <div class="hero-stat">
+                                <strong>100%</strong>
+                                <span>Motivation & progression</span>
+                            </div>
+                            <div class="hero-stat">
+                                <strong>UI</strong>
+                                <span>Design & web moderne</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual">
+                        <div class="floating-card top">
+                            <strong>Créativité</strong>
+                            <span>Idées claires et visuelles</span>
+                        </div>
+
+                        <div class="hero-image-wrap">
+                            <img class="hero-image" src="images/Awa Ndiaye.png" alt="Étudiante" />
+                        </div>
+
+                        <div class="floating-card bottom">
+                            <strong>Apprentissage</strong>
+                            <span>Évolution continue</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
